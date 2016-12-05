@@ -1,4 +1,4 @@
-## The functions- makeCacheMatrix and cacheSolve- described here create a special matrix 
+## The two functions- makeCacheMatrix and cacheSolve- described here create a special matrix 
 ## that can cache its inverse and retrieve the inverse from the cache if the matrix has not changed
 
 
@@ -32,9 +32,8 @@ makeCacheMatrix <- function(x = matrix()) {
        getInverse = getInverse)
 }
 
-## The function- cacheSolve computes the inverse of the special "matrix" returned by
-## makeCacheMatrix function. If the inverse has already been calculated (and the matrix
-## has not changed), then the cacheSolve should retrieve the inverse from the cache.
+## The function- cacheSolve computes the inverse of the special "matrix" returned by makeCacheMatrix function. If the inverse has 
+## already been calculated (and the matrix has not changed), then the cacheSolve should retrieve the inverse from the cache.
 
 cacheSolve <- function(x, ...) {
   
